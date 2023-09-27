@@ -1,0 +1,9 @@
+ssid = "SSID_HERE"
+psk = "PSK_HERE"
+INFLUXDB_URL = "https://example.fqdn.com/api/v2/write"
+INFLUXDB_ORG = "ORG"
+INFLUXDB_BUCKET = "CircuitPythonTest"
+INFLUXDB_TOKEN = "INFLUX_TOKEN_HERE"
+SYSLOG_SERVER = "10.0.0.10"
+SYSLOG_SERVER_ENABLED = "FALSE"
+SYSLOG_PORT = 514
