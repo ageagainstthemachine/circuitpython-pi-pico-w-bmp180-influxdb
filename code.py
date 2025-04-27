@@ -1,6 +1,6 @@
 # A CircuitPython example for the Raspberry Pi Pico W using cooperative multitasking via asyncio which sends data from a BMP180 sensor to an InfluxDB v2 server.
 # https://julianmcconnell.com
-# Version 20230926a
+# Version 20250426a
 
 import board
 import digitalio
@@ -87,7 +87,7 @@ async def wifi_connect():
             try:
                 wifi.radio.connect(ssid, psk)
                 #print(f"Connected to {ssid}")
-            except (ConnectionError, wifi.RadioError) as e:
+            except ConnectionError as e:
                 #print("Failed to connect:", e)
                 await asyncio.sleep(10)
         else:
